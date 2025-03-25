@@ -19,6 +19,8 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd())
   return {
     base: env.VITE_BASE_URL,
+    port: 3010,
+    open: true,
     server: {
       hmr: true,
       host: true,
